@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&family=Playfair+Display:wght@400;500;700&family=Poppins:wght@100;300;400;500;700&family=Roboto&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-poppins;
+  }
+}
+
+.loading {
+  filter: blur(6rem);
+  clip-path: inset(0);
+}
+.loaded {
+  filter: blur(0px);
+}
+
+.rotate {
+  text-transform:uppercase;
+  white-space: nowrap;
+  animation: floatText 10s infinite linear;
+}
+
+@keyframes floatText {
+  to {
+    transform: translateX(-50%);
+  }
+  from {
+    transform: translateX(0%);
+  }
+}
