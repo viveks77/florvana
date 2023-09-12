@@ -36,7 +36,7 @@ const FooterSection = () => {
             animate={{ opacity: 1 }}
             transition={{ type: "tween", duration: 0.6 }}
             className="h-full w-full rounded-md object-cover"
-            src="/pattern-2.jpg"
+            src="/img/pattern-2.jpg"
             alt="footer"
           />
         </div>
